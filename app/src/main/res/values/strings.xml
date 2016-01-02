@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Minecraft Workbench</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="bedwars">Bedwars</string>
+    <string name="skywars">Skywars</string>
+    <string name="freebuild">Freebuild</string>
+    <string name="survivalgames">Survival Games</string>
+    <string name="FinderHinweis">For more Options press on the Item above</string>
+
+    <string-array name="gamemodes">
+        <item>Bedwars</item>
+        <item>Skywars</item>
+        <item>Freebuild</item>
+    </string-array>
+
+    <string-array name="Country">
+        <item>USA</item>
+        <item>Germany</item>
+        <item>Spain</item>
+        <item>England</item>
+        <item>France</item>
+    </string-array>
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#607D8B">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="+ Gamemode"
+        android:id="@+id/setGamemode"
+        android:onClick="setGamemode"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/gamemodebtn"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#78909C"
+        android:textSize="30dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gamemodeList"
+        android:layout_below="@+id/setGamemode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#78909C"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="320dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/FinderHinweis"
+        android:id="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:minLines="2"
+        android:textColor="#78909C" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/maxSize"
+        android:background="#78909C"
+        android:layout_below="@+id/minSize"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Min Size:"
+        android:id="@+id/textView2"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/gamemodeList"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="144dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Max Size:"
+        android:id="@+id/textView3"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/maxSize"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/minSize"
+        android:background="#78909C"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/maxSize"
+        android:layout_alignStart="@+id/maxSize" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Country"
+        android:id="@+id/setCountry"
+        android:onClick="setCountry"
+        android:background="@drawable/gamemodebtn"
+        android:textColor="#78909C"
+        android:textSize="30dp"
+        android:layout_above="@+id/startSearch"
+        android:layout_alignLeft="@+id/startSearch"
+        android:layout_alignStart="@+id/startSearch"
+        android:layout_marginRight="10dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Search"
+        android:id="@+id/startSearch"
+        android:onClick="startSearch"
+        android:background="@drawable/gamemodebtn"
+        android:textColor="#78909C"
+        android:textSize="30dp"
+        android:layout_above="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>
